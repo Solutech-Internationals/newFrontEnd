@@ -9,6 +9,7 @@ import ItemSearch from "./pages/itemSerchPage/ItemSearch.tsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
+import QuestionPage from "./pages/questionPage/QuestionPage.tsx";
 
 function App() {
   React.useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
                   <Route path="/home" element={<LandingPage/>} />
                   <Route path="/itemSearch/:category" element={<ItemSearch />} />
                   <Route path="/contactUs" element={<ContactUsPage/>} />
+                  <Route path="/question" element={<QuestionPage />} />
                   {/*<Route path="/storeList" element={<StoreList/>} />*/}
               </Routes>
           </BrowserRouter>
